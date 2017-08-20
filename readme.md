@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/aerlinn13/planc.svg?branch=master)](https://travis-ci.org/aerlinn13/planc)
-(https://img.shields.io/badge/lang-swift-orange.svg)
+[![Build Status](https://img.shields.io/badge/lang-swift-orange.svg)
 
 # Planc
 Planc - minimalistic open-source to-do list written in Swift 3. After App Store release codebase will be published here. 
