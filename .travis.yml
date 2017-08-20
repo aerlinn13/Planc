@@ -1,8 +1,6 @@
 language: swift
-xcode_project: Planc.xcodeproj
-xcode_scheme:  PlancTests
 
 script:
-  - xcodebuild -scheme Planc  -workspace Planc.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+
+  - xcodebuild -project Planc.xcodeproj -scheme Planc  -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" -configuration Release ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+  - bash <(curl -s https://codecov.io/bash) -cF ios
