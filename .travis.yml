@@ -1,0 +1,3 @@
+language: swift
+xcode_project: Planc.xcodeproj
+xcode_scheme:  PlancTests
