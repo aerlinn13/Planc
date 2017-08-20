@@ -15,6 +15,8 @@
 		834EEC4C1F49AC910048139A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834EEC491F49AC910048139A /* Main.storyboard */; };
 		834EEC4D1F49AC910048139A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834EEC4A1F49AC910048139A /* TableViewCell.xib */; };
 		834EEC511F49AEAD0048139A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 834EEC501F49AEAD0048139A /* Info.plist */; };
+		834EECF51F4A443E0048139A /* PlancTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EECF41F4A443E0048139A /* PlancTests.swift */; };
+		834EECF81F4A446A0048139A /* PlancUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834EECF71F4A446A0048139A /* PlancUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		834EEC491F49AC910048139A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
 		834EEC4A1F49AC910048139A /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		834EEC501F49AEAD0048139A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		834EECF41F4A443E0048139A /* PlancTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlancTests.swift; sourceTree = "<group>"; };
+		834EECF71F4A446A0048139A /* PlancUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlancUITests.swift; sourceTree = "<group>"; };
 		83AE6E801F43A5FA007A8525 /* Planc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AE6E971F43A5FA007A8525 /* PlancTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlancTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AE6EA21F43A5FA007A8525 /* PlancUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlancUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,9 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834EECF61F4A44450048139A /* PlancTests */ = {
+			isa = PBXGroup;
+			children = (
+				834EECF41F4A443E0048139A /* PlancTests.swift */,
+				834EECF71F4A446A0048139A /* PlancUITests.swift */,
+			);
+			name = PlancTests;
+			sourceTree = "<group>";
+		};
 		83AE6E771F43A5FA007A8525 = {
 			isa = PBXGroup;
 			children = (
+				834EECF61F4A44450048139A /* PlancTests */,
 				83AE6E821F43A5FA007A8525 /* Planc */,
 				83AE6E811F43A5FA007A8525 /* Products */,
 			);
@@ -179,10 +193,12 @@
 					};
 					83AE6E961F43A5FA007A8525 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
 						TestTargetID = 83AE6E7F1F43A5FA007A8525;
 					};
 					83AE6EA11F43A5FA007A8525 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
 						TestTargetID = 83AE6E7F1F43A5FA007A8525;
 					};
 				};
@@ -251,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834EECF51F4A443E0048139A /* PlancTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834EECF81F4A446A0048139A /* PlancUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,12 +440,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FVB4M6K923;
 				INFOPLIST_FILE = DoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.DoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planc.app/Planc";
@@ -439,6 +459,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FVB4M6K923;
 				INFOPLIST_FILE = DoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -455,12 +476,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FVB4M6K923;
 				INFOPLIST_FILE = DoUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aerlindir.DoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Do;
@@ -471,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FVB4M6K923;
 				INFOPLIST_FILE = DoUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
