@@ -2,6 +2,8 @@
 ![Build Status](https://img.shields.io/badge/lang-swift-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 # Planc
+![alt text](Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png "screenshot")
+
 Planc - minimalistic open-source to-do list written in Swift 3. After App Store release codebase will be published here. 
 If you have any questions about Planc, please feel free to email me anytime at danil@chernyshev.pro.
 
