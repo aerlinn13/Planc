@@ -2,6 +2,7 @@
 ![Build Status](https://img.shields.io/badge/lang-swift-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 [![codebeat badge](https://codebeat.co/badges/50aa9729-a259-464b-b0d4-3de03563cc6a)](https://codebeat.co/projects/github-com-aerlinn13-planc-master)
+[![Issue Count](https://codeclimate.com/github/aerlinn13/Planc/badges/issue_count.svg)](https://codeclimate.com/github/aerlinn13/Planc)
 
 # Planc
 ![alt text](Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png "screenshot")
