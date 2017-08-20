@@ -4,7 +4,7 @@
 # Planc
 ![alt text](Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png "screenshot")
 
-Planc - minimalistic open-source to-do list written in Swift 3. After App Store release codebase will be published here. 
+Planc - minimalistic open-source to-do list written in Swift 3. It is so minimalistic so it was rejected from App Store. 
 If you have any questions about Planc, please feel free to email me anytime at danil@chernyshev.pro.
 
 ![alt text](screenshots/1.png "screenshot")
