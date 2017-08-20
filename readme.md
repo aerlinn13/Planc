@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aerlinn13/planc.svg?branch=master)](https://travis-ci.org/aerlinn13/planc)
+
 # Planc
 Planc - minimalistic open-source to-do list written in Swift 3. After App Store release codebase will be published here. 
 If you have any questions about Planc, please feel free to email me anytime at danil@chernyshev.pro.
