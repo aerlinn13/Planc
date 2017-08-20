@@ -8,7 +8,7 @@ to create real-life applications. If you are interested in me as a part of your 
 Now I am working on my second app called Mnemmal. It is word learning app and it uses cards not in usual way with some social networking element.
 Stay tuned!
 
-#License
+# License
 
 Copyright <2017> <CHERNYSHEV DANIL>
 
