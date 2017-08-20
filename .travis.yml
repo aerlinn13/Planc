@@ -2,5 +2,6 @@ language: swift
 osx_image: xcode8.3
 script:
 
-  - xcodebuild -project Planc.xcodeproj -scheme PlancTests  -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
-  - bash <(curl -s https://codecov.io/bash) -cF ios
+  - xcodebuild -project Planc.xcodeproj -scheme Planc  -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
